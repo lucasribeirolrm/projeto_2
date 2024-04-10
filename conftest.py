@@ -10,7 +10,7 @@ def browser():
     # Configurar o WebDriver para usar o Chrome
     chrome_options = webdriver.ChromeOptions()
     chrome_options.binary_location = chrome_path
-    driver = webdriver.Chrome(executable_path="/usr/bin/chromedriver", options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
     
     yield driver
     
